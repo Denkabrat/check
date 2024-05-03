@@ -1,0 +1,99 @@
+.List {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.Hidden {
+  display: none;
+}
+
+.Item {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.Item img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Item div {
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.Item div h3 {
+  text-align: center;
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 600;
+  color: #4e4e4e;
+}
+
+.Item div p {
+  text-align: center;
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: 300;
+  color: #4e4e4e;
+  width: 100%;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1250px) {
+  .List {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .Item img {
+    max-width: 200px;
+  }
+
+  .Item button {
+    height: 32px;
+    margin-top: 8px;
+    width: 100%;
+    max-width: 150px;
+  }
+
+  .Item div h3 {
+    font-size: 18px;
+  }
+
+  .Item div {
+    width: 100%;
+    gap: 8px;
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .Item img {
+    max-width: 150px;
+    width: 100%;
+  }
+
+  .Item div p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+  }
+}

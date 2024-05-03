@@ -1,0 +1,46 @@
+.Section {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    height: calc(100vh - 400px);
+}
+
+.Section h2 {
+    font-size: 32px;
+    line-height: 140%;
+    font-weight: 600;
+    color: #4E4E4E;
+}
+
+.Section h4,
+.Section .Text,
+.Section ul li {
+    color: #4E4E4E;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.Section ul {
+    padding-left: 16px;
+}
+
+.Map iframe {
+    width: 100% !important;
+    border-radius: 4px !important;
+    border: none !important;
+}
+
+@media screen and (max-width: 1300px) {
+    .Section {
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-height: 670px) {
+    .Section {
+        height: auto;
+    }
+}

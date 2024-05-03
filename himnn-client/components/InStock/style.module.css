@@ -1,0 +1,41 @@
+.Additional {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.Additional h2 {
+    font-size: 18px;
+    color: #4e4e4e;
+    font-weight: 600;
+}
+
+.Box {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+}
+
+.Item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.Item p {
+    font-size: 16px;
+    color: #4e4e4e;
+    min-width: fit-content;
+}
+
+.Param {
+    min-width: 0 !important;
+}
+
+.Item div {
+    width: 100%;
+    border-bottom: 1px dashed #BEBEBE;
+}

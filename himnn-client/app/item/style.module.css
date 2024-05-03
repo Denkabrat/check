@@ -1,0 +1,124 @@
+.Section {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.Section h1 {
+    font-size: 32px;
+    line-height: 140%;
+    font-weight: 600;
+    color: #4E4E4E;
+}
+
+.MainInfo {
+    width: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    border-radius: 4px;
+    overflow: hidden;
+    padding: 30px;
+}
+
+.Box {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Box p {
+    color: #BEBEBE;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.Box .Title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Box .Title h4 {
+    color: #4E4E4E;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.Price {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.Price h3 {
+    font-size: 24px;
+    color: #4E4E4E;
+    font-weight: 400;
+}
+
+.Price div {
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #BEBEBE;
+}
+
+.Price div svg {
+    color: #00B302;
+}
+
+.Controlls {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.Controlls .Icon {
+    color: #4E4E4E;
+    cursor: pointer;
+}
+
+.Delivery p {
+    line-height: 150%;
+}
+
+.Delivery ul {
+    margin-left: 15px;
+}
+
+.Gost {
+    color: #00B302;
+    width: fit-content;
+}
+
+@media screen and (max-width: 1300px) {
+    .Section {
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .MainInfo {
+        flex-direction: column;
+    }
+
+    .MainInfo img {
+        width: 100%;
+    }
+
+    .Section h1 {
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .MainInfo {
+        padding: 30px 10px;
+    }
+}

@@ -1,0 +1,33 @@
+.Counter {
+    display: flex;
+    align-items: center;
+    height: 32px;
+}
+
+.Counter button {
+    min-width: 32px;
+    height: 100%;
+    cursor: pointer;
+    border: 1px solid #EDEDED;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Counter input {
+    width: 32px;
+    height: 100%;
+    text-align: center;
+    background: #EDEDED;
+    border: none;
+    color: #4E4E4E;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.Counter button svg {
+    width: 16px;
+    height: 16px;
+    color: #4E4E4E;
+}

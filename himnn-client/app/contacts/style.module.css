@@ -1,0 +1,90 @@
+.Section {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.Section h2 {
+    font-size: 32px;
+    line-height: 140%;
+    font-weight: 600;
+    color: #4E4E4E;
+}
+
+.Map {
+    width: 100%;
+}
+
+.Map iframe {
+    width: 100% !important;
+    border-radius: 4px !important;
+    border: none !important;
+}
+
+.Box {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 80px;
+}
+
+.InfoBox {
+    max-width: 215px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.InfoBox div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.InfoBox h3 {
+    color: #4E4E4E;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.InfoBox p {
+    color: #4E4E4E;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.InfoBox p a,
+.InfoBox a {
+    color: #00B302;
+}
+
+@media screen and (max-width: 1300px) {
+    .Section {
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .Box {
+        flex-direction: column;
+    }
+
+    .InfoBox {
+        flex-direction: row;
+        max-width: 100%;
+        width: 100%;
+        justify-content: space-between;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .InfoBox div {
+        width: 100%;
+    }
+}

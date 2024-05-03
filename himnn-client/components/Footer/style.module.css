@@ -1,0 +1,107 @@
+.Footer {
+    width: 100%;
+    background: #076B00;
+    padding: 35px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.Container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.Container .Logo {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    min-width: 95px;
+}
+
+.Container .Logo p {
+    font-size: 15px;
+    line-height: 120%;
+    font-weight: 300;
+}
+
+.Group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #fff;
+}
+
+.Group h3 {
+    font-size: 24px;
+    line-height: 140%;
+    font-weight: 600;
+}
+
+.Group ul {
+    list-style: none;
+    font-size: 15px;
+    line-height: 140%;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Group:nth-child(2) {
+    max-width: 140px;
+    width: 100%;
+}
+
+.Group:nth-child(3) {
+    max-width: 215px;
+    width: 100%;
+}
+
+.Group:nth-child(4) {
+    max-width: 169px;
+    width: 100%;
+}
+
+.Group:nth-child(5) {
+    max-width: 169px;
+    width: 100%;
+}
+
+.Empty {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .Group {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .Container {
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .Container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Empty {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .Container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

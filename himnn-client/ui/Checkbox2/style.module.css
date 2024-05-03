@@ -1,0 +1,25 @@
+.Checkbox2 {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background: #F1F1F1;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Checkbox2 svg {
+    transition: 0.5s;
+    color: transparent;
+    height: 15px;
+    width: 15px;
+}
+
+.Checkbox2.Active {
+    background: #00B302;
+}
+
+.Checkbox2.Active svg {
+    color: #fff;
+}

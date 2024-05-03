@@ -1,0 +1,161 @@
+.Section {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    min-height: calc(100vh - 400px);
+}
+
+.Section h2 {
+    font-size: 32px;
+    line-height: 140%;
+    font-weight: 600;
+    color: #4E4E4E;
+}
+
+.Section h2::first-letter {
+    text-transform: uppercase;
+}
+
+.Row {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.Items {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+
+.List {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.List>div {
+    width: 100%;
+}
+
+.CatalogList {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.CatalogList .Item {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.CatalogList .Item img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.CatalogList .Item div {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.CatalogList .Item div h3 {
+    text-align: center;
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 600;
+    color: #4E4E4E;
+}
+
+.CatalogList .Item div p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 140%;
+    font-weight: 300;
+    color: #4E4E4E;
+}
+
+.CategoryList {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.CategoryList .Item {
+    width: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.CategoryList .Item img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.CategoryList .Item div {
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.CategoryList .Item div h3 {
+    text-align: center;
+    font-size: 16px;
+    line-height: 140%;
+    font-weight: 600;
+    color: #4E4E4E;
+}
+
+.CategoryList .Item div p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 140%;
+    font-weight: 300;
+    color: #4E4E4E;
+    width: 100%;
+    word-break: break-all;
+}
+
+.Loader {
+    align-self: center;
+}
+
+@media screen and (max-width: 1300px) {
+    .Section {
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .Row {
+        flex-direction: column;
+    }
+
+    .Section h2 {
+        font-size: 24px;
+    }
+}

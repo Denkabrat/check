@@ -1,0 +1,20 @@
+.Textarea {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.Textarea label {
+    color: #4E4E4E;
+    font-size: 14px;
+}
+
+.Textarea textarea {
+    background: #EAEAEA;
+    border: none;
+    border-radius: 2px;
+    height: 80px;
+    resize: vertical;
+    padding: 15px;
+}

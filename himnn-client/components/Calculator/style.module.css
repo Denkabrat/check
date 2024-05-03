@@ -1,0 +1,34 @@
+.Range {
+    width: 100%;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.Calculator {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Inputs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.Inputs div {
+    width: 12px;
+    height: 1px;
+    background: #BEBEBE;
+}
+
+.Inputs input {
+    width: 100%;
+    border: 1px solid #BEBEBE;
+    padding: 7px;
+    height: 24px;
+    border-radius: 2px;
+    color: #4E4E4E;
+    font-size: 14px;
+}

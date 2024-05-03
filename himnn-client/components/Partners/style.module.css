@@ -1,0 +1,81 @@
+.Partners {
+    width: 100%;
+    max-width: 1200px;
+    margin: 80px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.List {
+    gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.Partners h2 {
+    font-size: 32px;
+    line-height: 140%;
+    font-weight: 600;
+    color: #4E4E4E;
+}
+
+.List div {
+    width: 100%;
+    height: 200px;
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.More {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 16px;
+    color: #4E4E4E;
+    font-weight: 400;
+}
+
+.List.Active div {
+    display: flex !important;
+}
+
+.More.Active,
+.More {
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+    .Partners {
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .List {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .List div:nth-child(5),
+    .List div:nth-child(6),
+    .List div:nth-child(7),
+    .List div:nth-child(8) {
+        display: none;
+    }
+
+    .More {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .List div svg {
+        width: 70%;
+        height: auto;
+    }
+}

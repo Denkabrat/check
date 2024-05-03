@@ -1,0 +1,56 @@
+.Section {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.Section h2 {
+  font-size: 32px;
+  line-height: 140%;
+  font-weight: 600;
+  color: #4e4e4e;
+}
+
+.Section h2::first-letter {
+  text-transform: uppercase;
+}
+
+.Row {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.Items {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+}
+
+.Section pre {
+  white-space: pre-wrap;
+  width: 100%;
+  margin-top: -10px;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+@media screen and (max-width: 1300px) {
+  .Section {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .Row {
+    flex-direction: column;
+  }
+
+  .Section h2 {
+    font-size: 24px;
+  }
+}

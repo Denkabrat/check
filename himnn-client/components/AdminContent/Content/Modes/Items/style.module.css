@@ -1,0 +1,127 @@
+.Filter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Filter h1 {
+    font-weight: 600;
+    color: #4e4e4e;
+}
+
+.Item {
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.Item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #4e4e4e;
+}
+
+.Item div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Item button {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.Item button svg {
+    width: 20px;
+    height: 20px;
+}
+
+
+.Item .Delete {
+    background: #f47526;
+    color: #fff;
+}
+
+.Item .Delete:hover {
+    opacity: 0.7;
+}
+
+.Item .Edit {
+    background: #00c925;
+    color: #fff;
+}
+
+.Item .Edit:hover {
+    background: #00c925;
+    color: #fff;
+    opacity: 0.7;
+}
+
+.Data {
+    flex-direction: column;
+    align-items: flex-start !important;
+}
+
+.Data p {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.Data h3 span {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.ItemBox {
+    display: flex;
+    align-items: center;
+    gap: 25px !important;
+}
+
+.Item img {
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.TopRow {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.TopRow button {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    background: #00c925;
+    transition: 0.5s;
+}
+
+.TopRow button:hover {
+    opacity: 0.7;
+}
+
+.TopRow button svg {
+    width: 24px;
+    height: 24px;
+    color: #fff;
+}

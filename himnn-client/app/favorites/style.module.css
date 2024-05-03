@@ -1,0 +1,94 @@
+.Section {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    min-height: calc(100vh - 500px);
+}
+
+.Section h2 {
+    font-size: 32px;
+    line-height: 140%;
+    font-weight: 600;
+    color: #4E4E4E;
+}
+
+.Box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Buttons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.Buttons button {
+    width: fit-content;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    color: #4E4E4E;
+    cursor: pointer;
+}
+
+.Buttons button:nth-child(2) {
+    color: #00B302;
+}
+
+.ClearButton {
+    padding: 0 35px;
+    height: 32px;
+    border-radius: 2px;
+    border: 1px solid #BEBEBE;
+    background: #fff;
+    color: #BEBEBE;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.Contolls {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 40px;
+}
+
+.Contolls div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Contolls h3 {
+    font-size: 24px;
+    color: #4E4E4E;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1300px) {
+    .Section {
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .Buttons button {
+        font-size: 16px;
+    }
+
+    .ClearButton {
+        padding: 0 15px;
+    }
+}

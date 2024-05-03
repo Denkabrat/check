@@ -1,0 +1,46 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.3.3",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@fontsource/roboto": "^5.0.13",
+    "@mui/material": "^5.15.15",
+    "@mui/styled-engine": "^5.15.14",
+    "@mui/styled-engine-sc": "^6.0.0-alpha.18",
+    "@nextui-org/react": "^2.3.6",
+    "@nextui-org/table": "^2.0.33",
+    "axios": "^1.6.7",
+    "firebase": "^10.8.1",
+    "google-translate-api": "^2.3.0",
+    "multi-range-slider-react": "^2.0.7",
+    "next": "14.1.0",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-input-mask": "^2.0.4",
+    "react-slick": "^0.30.1",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^6.1.8",
+    "zustand": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/google-translate-api": "^2.3.5",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/react-input-mask": "^3.0.5",
+    "@types/react-slick": "^0.23.13",
+    "eslint": "^8",
+    "eslint-config-next": "14.1.0",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5"
+  }
+}

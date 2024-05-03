@@ -1,0 +1,32 @@
+.Tabs {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    margin-top: 40px;
+}
+
+.Tabs div {
+    height: 50px;
+    padding: 14px;
+    border: 1px solid transparent;
+    border-bottom-color: #00B302;
+    border-radius: 2px 2px 0 0;
+    cursor: pointer;
+    color: #00B302;
+    font-size: 16px;
+}
+
+.Tabs div.Active {
+    border-color: #00B302;
+}
+
+.Tabs::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .Tabs {
+        width: 100%;
+        overflow-x: scroll;
+    }
+}

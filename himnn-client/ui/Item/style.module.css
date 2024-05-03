@@ -1,0 +1,142 @@
+.ItemBox {
+    position: relative;
+    width: 282px;
+    min-height: 396px;
+}
+
+.Item {
+    width: 100%;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+    height: fit-content;
+    border: 0.3px solid transparent;
+    transition: 0.5s;
+    z-index: 10;
+    position: relative;
+    user-select: none;
+}
+
+.Item img {
+    width: 100%;
+    background: #EAEAEA;
+    object-fit: cover;
+}
+
+.Box {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    min-height: 194px;
+}
+
+.Box h3 {
+    width: 100%;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    min-width: 100%;
+}
+
+.Available {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Available div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #BEBEBE;
+    font-size: 14px;
+}
+
+.Available div svg {
+    color: #00B302;
+}
+
+.Available div.Not svg {
+    color: #BEBEBE;
+}
+
+.Box h4 {
+    width: 100%;
+    color: #00B302;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+}
+
+.Controlls {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    opacity: 0;
+    max-height: 0;
+    overflow-y: hidden;
+}
+
+.Controlls button {
+    padding: 0;
+    width: 100%;
+}
+
+.Item.Active .Controlls {
+    opacity: 1;
+    max-height: 100px;
+    transition: 0.5s;
+}
+
+.Item.Active {
+    
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    height: auto;
+}
+
+.Item.Leave {
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    height: auto;
+}
+
+.BookmarkIcon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 15px;
+    right: 15px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.BookmarkIcon.ActiveIcon {
+    opacity: 1;
+}
+
+@media screen and (max-width: 750px) {
+    .ItemBox {
+        width: 100%;
+    }
+
+    .BookmarkIcon {
+        opacity: 1;
+    }
+
+    .Controlls {
+        opacity: 1;
+        max-height: 100px;
+    }
+}

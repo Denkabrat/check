@@ -1,0 +1,97 @@
+.Item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 30px 45px;
+    justify-content: space-between;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.Fill {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.Item img {
+    width: 100%;
+}
+
+.Fill:nth-child(1) p {
+    width: 100%;
+}
+
+.Item:last-child {
+    border: none;
+}
+
+.MobileItem {
+    display: none;
+    padding: 15px;
+    border-bottom: 1px solid #D9D9D9;
+    position: relative;
+}
+
+.MobileItem .Left {
+    width: 100%;
+}
+
+.MobileItem .Right {
+    width: 100%;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.MobileItem .Right div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.MobileItem .Right div p {
+    color: #4E4E4E;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.MobileItem .Right div h3 {
+    color: #BEBEBE;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 800px) {
+    .Item {
+        display: none;
+    }
+
+    .MobileItem {
+        display: flex;
+    }
+
+    .Close {
+        width: 14px;
+        height: 14px;
+        top: 18px;
+        right: 18px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .MobileItem {
+        gap: 8px;
+    }
+
+    .MobileItem .Right {
+        font-size: 14px;
+    }
+
+    .MobileItem .Left img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}

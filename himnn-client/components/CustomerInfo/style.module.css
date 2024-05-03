@@ -1,0 +1,128 @@
+.CustomerInfo {
+    width: 100%;
+    background: #fff;
+    padding: 25px 45px;
+}
+
+.CustomerInfo.Active .Top {
+    border-bottom: 1px solid #D9D9D9;
+    padding: 0 0 25px 0;
+}
+
+.Top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Top div {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    color: #00B302;
+    font-size: 18px;
+}
+
+.Top div h3 {
+    text-align: center;
+}
+
+.Top button {
+    background: transparent;
+    border: none;
+    color: #00B302;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.CustomerInfo.Active .Top button {
+    display: none;
+}
+
+.Info {
+    display: none;
+    padding: 25px 0;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.CustomerInfo.Active .Info {
+    display: flex;
+}
+
+.Info label {
+    color: #4E4E4E;
+    font-size: 14px;
+}
+
+.Info .Check {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.Checkboxes {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.Checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #4E4E4E;
+}
+
+.Form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 375px;
+}
+
+.ButtonBox {
+    display: none;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.CustomerInfo.Active .ButtonBox {
+    display: flex;
+}
+
+@media screen and (max-width: 800px) {
+    .CustomerInfo {
+        padding: 25px 15px;
+    }
+
+    .Top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .Top button {
+        padding-left: 32px;
+    }
+
+    .Top div {
+        gap: 8px;
+    }
+
+    .Top h3 {
+        text-align: start;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .Checkboxes {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+}

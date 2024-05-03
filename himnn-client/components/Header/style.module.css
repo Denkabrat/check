@@ -1,0 +1,163 @@
+.Header {
+    width: 100%;
+    padding: 40px 16px 20px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.Header .Box {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.Logo p {
+    max-width: 233px;
+    font-size: 16px;
+    color: #4E4E4E;
+}
+
+.Logo svg {
+    color: #00C925;
+    width: 90px;
+    height: 51px;
+    cursor: pointer;
+}
+
+.Location {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.Location p {
+    max-width: 211px;
+    font-size: 16px;
+    color: #4E4E4E;
+}
+
+.Phone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.Phone p {
+    font-size: 16px;
+    color: #4E4E4E;
+}
+
+.Icons {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+}
+
+.Icons svg:last-child {
+    display: none;
+}
+
+.Location svg,
+.Phone svg,
+.Icons svg {
+    color: #4E4E4E;
+    height: 28px;
+    width: 28px;
+}
+
+.Icons svg {
+    cursor: pointer;
+}
+
+.Navigation {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Navigation .Button {
+    height: 43px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #4e4e4e;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: 0.5s;
+}
+
+.Navigation .Button.Active {
+    color: #00B302;
+}
+
+.Navigation .Button:hover {
+    color: #00B302;
+}
+
+.CartBox {
+    position: relative;
+    height: 28px;
+    width: 28px;
+    display: flex;
+    align-content: inherit;
+    justify-content: center;
+    color: #4E4E4E;
+}
+
+.CartBox div {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background: #00B302;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .Phone,
+    .Location {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .Navigation {
+        display: none;
+    }
+
+    .Icons svg:last-child {
+        display: flex;
+    }
+
+    .Header {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Logo p {
+        display: none;
+    }
+}

@@ -1,0 +1,48 @@
+.Advantages {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+    margin: 40px auto 0 auto;
+    padding: 0 15px;
+}
+
+.Advantages div {
+    width: 100%;
+    background: #fff;
+    border-radius: 4px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    color: #4E4E4E;
+}
+
+.Advantages div p {
+    white-space: pre-line;
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .Advantages {
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .Advantages {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Advantages div p {
+        font-size: 14px;
+    }
+
+    .Advantages div {
+        height: 100%;
+    }
+}

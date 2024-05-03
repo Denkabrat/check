@@ -1,0 +1,27 @@
+.Bread {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.Bread div {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    color: #BEBEBE;
+}
+
+.Bread div:last-child p {
+    display: none;
+}
+
+.Bread div a::first-letter {
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 750px) {
+    .Bread {
+        display: none;
+    }
+}

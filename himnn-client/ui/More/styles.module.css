@@ -1,0 +1,14 @@
+.More {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #00B302;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.More svg {
+    height: 12px;
+    width: 12px;
+    color: #00B302;
+}

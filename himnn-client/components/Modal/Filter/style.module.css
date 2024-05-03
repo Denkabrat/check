@@ -1,0 +1,91 @@
+.Box {
+    padding: 30px;
+    border-radius: 20px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.Box h2 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #4e4e4e;
+}
+
+.List {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Item {
+    height: 40px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    font-size: 14px;
+    color: #4e4e4e;
+    font-weight: 600;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.Row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.Box svg {
+    width: 24px;
+    height: 24px;
+    color: #4e4e4e;
+    cursor: pointer;
+}
+
+.Item svg {
+    color: #f47526;
+}
+
+.Creation {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.Creation input,
+.Input {
+    width: 100%;
+    border: none;
+    background: #EAEAEA;
+    border-radius: 4px;
+    height: 40px;
+    padding: 0 15px;
+}
+
+.Creation div {
+    min-width: 30px;
+    width: 30px;
+    height: 30px;
+    background: #00B302;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.Creation svg {
+    width: 15px;
+    height: 15px;
+    color: #fff;
+}

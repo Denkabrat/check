@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  background: #F5F5F5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* Это позволяет контенту заполнять оставшееся пространство на странице */
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.multi-range-slider .caption {
+  display: none !important;
+}
+
+.multi-range-slider .bar {
+  height: 2px !important;
+  margin-top: 3px !important;
+}
+
+.multi-range-slider .bar-left,
+.multi-range-slider .bar-inner,
+.multi-range-slider .bar-right {
+  box-shadow: none !important;
+  border: none !important;
+  height: 2px !important;
+  margin-top: 3px !important;
+  padding: 0 !important;
+}
+
+.multi-range-slider .thumb::before {
+  box-shadow: none !important;
+  border-color: #00B302 !important;
+  border-width: 2px !important;
+}
+
+.slick-active button {
+  background: #00B302 !important;
+}
+
