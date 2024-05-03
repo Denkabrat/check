@@ -12,6 +12,9 @@ class ItemsController {
         }
     }
 
+
+    
+
     async get(req, res) {
         try {
             const id = req.params["id"]
