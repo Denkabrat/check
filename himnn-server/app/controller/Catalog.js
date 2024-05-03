@@ -6,6 +6,8 @@ class CatalogController {
             const { data } = req.body
             const result = await CatalogService.create(data)
 
+
+            
             res.json(result)
         } catch (e) {
             console.log(e)
